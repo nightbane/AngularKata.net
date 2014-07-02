@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using AngularKata.Models;
 
 namespace AngularKata.Controllers
 {
@@ -46,22 +47,4 @@ namespace AngularKata.Controllers
         }
     }
 
-    public class PriorityModel
-    {
-        public int PriorityId { get; set; }
-        public string Name { get; set; }
-        public Segment Category { get; set; }
-        public string Objective { get; set; }
-    }
-
-    public enum Segment
-    {
-        Financial,
-        Spiritual,
-        Physical,
-        Intellectual,
-        Family,
-        Social,
-        Career,
-    }
 }
